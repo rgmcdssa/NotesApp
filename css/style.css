@@ -1,0 +1,40 @@
+.searchInput {
+  width: 80%;
+  display: inline;
+}
+
+.searchButton {
+  width: 40%;
+  display: inline;
+}
+
+.searchArea {
+  background-color: #3E78B2;
+}
+
+.infoHeader {
+  text-align: justify;
+  letter-spacing: 1px;
+  color: #004BA8;
+}
+
+.mainLink {
+  text-decoration: underline;
+  border: 0px solid #004BA8;
+  padding: 3px;
+}
+
+.activeEntityLabel {
+  text-decoration: bold;
+  color: #ffffff;
+}
+
+a {
+    text-decoration: underline;
+    border: 1px solid #004BA8;
+    padding: 3px;
+}
+
+hr {
+  border: 1px solid #004BA8;
+}

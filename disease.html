@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Webpage description goes here" />
+  <meta charset="utf-8">
+  <title>Notes App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Rogan Magee">
+  <link rel="stylesheet" href="css/style.css">
+    
+  <script src="src/database.js"></script>
+  <script src="src/functions.js"></script>
+</head>
+
+<body onload="pageLoad()">
+  
+<div class="container">
+
+<div id="searchArea" class="searchArea">
+<hr/>
+<input name="searchBox" id="searchBox" type="text" class="searchInput" onchange="updateSearchbox()">
+<p id="activeEntityLabel" class="activeEntityLabel"></p>
+<hr/>
+</div>
+<div id = "resultArea"></div>
+<hr/>
+<div id="infoHeader" class="infoHeader">
+<a id="clinical" onclick="showContent('clinical'); return false;">Clinical Picture</a>
+<a id="pathophys" onclick="showContent('pathophys'); return false;">Pathophys</a>
+<a id="diagnosis" onclick="showContent('diagnosis'); return false;">Diagnosis</a>
+<a id="differential" onclick="showContent('differential'); return false;">Differential</a>
+<a id="management" onclick="showContent('management'); return false;">Management</a>
+<a id="prognosis" onclick="showContent('prognosis'); return false;">Prognosis</a>
+<a id="notes" onclick="showContent('notes'); return false;">Notes</a>
+</div>
+<hr/>
+<br/>
+<div id="infoArea" class="infoArea">
+  
+</div>
+
+</div>
+
+</body>
+</html>
