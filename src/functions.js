@@ -67,6 +67,7 @@ function setActiveEntity(arg)  {
 }
 
 function showContent(field) {
+  document.getElementById("infoArea").innerHTML = "";
   if (databaseMap[field].has(activeEntity) && activeEntity != "") {
   var id = databaseMap[field].get(activeEntity).id;
   for (var j=1; j<database[field][id].length; j++) {
