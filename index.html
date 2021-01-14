@@ -13,8 +13,34 @@
   <script src="src/functions.js"></script>
 </head>
 
-<body>
-<a href="disease.html" class="mainLink">Disease</a><br/>
-<a href="ddx.html" class="mainLink">DDX</a><br/>
+<body onload="pageLoad()">
+  
+<div class="container">
+
+<div id="searchArea" class="searchArea">
+<hr/>
+<input name="searchBox" id="searchBox" type="text" class="searchInput" onchange="updateSearchbox()">
+<p id="activeEntityLabel" class="activeEntityLabel"></p>
+<hr/>
+</div>
+<div id = "resultArea"></div>
+<hr/>
+<div id="infoHeader" class="infoHeader">
+<a id="clinical" onclick="showContent('clinical'); return false;">Clinical Picture</a>
+<a id="pathophys" onclick="showContent('pathophys'); return false;">Pathophys</a>
+<a id="diagnosis" onclick="showContent('diagnosis'); return false;">Diagnosis</a>
+<a id="differential" onclick="showContent('differential'); return false;">Differential</a>
+<a id="management" onclick="showContent('management'); return false;">Management</a>
+<a id="prognosis" onclick="showContent('prognosis'); return false;">Prognosis</a>
+<a id="notes" onclick="showContent('notes'); return false;">Notes</a>
+</div>
+<hr/>
+<br/>
+<div id="infoArea" class="infoArea">
+  
+</div>
+
+</div>
+
 </body>
 </html>
